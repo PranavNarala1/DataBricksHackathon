@@ -1,0 +1,382 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(212, 175, 55,0.4),rgba(127,219,255,0.7)), url('/static/IMG/');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex; 
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 100px;
+}
+
+.nav-links{
+  flex: 1; 
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px; 
+  position: relative; 
+}
+
+.nav-links ul li a{
+  color: #fff; 
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links ul li::after{
+  content: ''; 
+  width: 0%;
+  height: 2px; 
+  background:#48bad5;
+  display: block; 
+  margin: auto; 
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%; 
+}
+
+.text-box{
+  width: 90%;  
+  color: rgba(212, 175, 55, 0.7);
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 115px;
+}
+
+.text-box p{
+  margin: 10px 0 40px; 
+  font-size: 25px;
+  color: #00539B; 
+}
+
+.hero-btn{
+  display: inline-block; 
+  text-decoration: none;
+  color: #00539B; 
+  border: 1px solid #00539B; 
+  padding: 12px 34px; 
+  font-size: 20px;
+  background: transparent;
+  position: relative; 
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.hero-btn:hover{
+  border: 1px solid #176EAC; 
+  border-color: #176EAC;
+  background: linear-gradient(to right, #D4AF37, #7FDBFF) center/cover no-repeat;
+  transition: 1s;
+}
+
+.course{
+  width: 80%;
+  margin: auto; 
+  text-align: center;
+  padding-top: 100px; 
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p{
+  color: #777; 
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+  .row{
+    margin-top: 5%;
+    display: flex; 
+    justify-content: space-between;
+  }
+
+.course-col{
+  flex-basis: 31%;
+  background: #fff3f3; 
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.campus{
+  width: 80%;
+  margin: auto; 
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col{
+  flex-basis: 32%; 
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+
+.layer{
+  background: transparent;
+  height: 100%; 
+  width: 100%; 
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(72,186,213,0.7);
+}
+
+.layer a{
+  width: 100%; 
+  font-weight: 500; 
+  color: #fff; 
+  font-size: 20px; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  position: absolute; 
+  opacity: 0; 
+  transition: 0.5s;
+}
+
+.layer:hover a{
+  bottom: 49%; 
+  opacity: 1;
+}
+
+.facilities{
+  width: 80%;
+  margin: auto; 
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px; 
+  margin-bottom: 5%; 
+  text-align: left;
+}
+
+.facilities-col img{
+  width: 100%; 
+  border-radius: 10px;
+}
+
+.facilities-col p{
+  padding: 0;
+}
+
+.facilities-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.footer{
+  width: 100%; 
+  text-align: center;
+  padding: 30px 0; 
+}
+
+.footer h4{
+  margin-bottom: 25px; 
+  margin-top: 20px; 
+  font-weight: 600;
+}
+
+.gradient-text {
+  background: rgba(212, 175, 55, 0.9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Dashboard h1{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.Dashboard p{
+  text-align: center;
+/*   padding-top: 50px;
+  padding-bottom: 30px; */
+/*   width: 75%; */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.improvement-btn {
+  margin-left: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.improvement-btn:hover {
+  border: 1px solid #176EAC;
+  background: linear-gradient(to right, #D4AF37, #7FDBFF) center/cover no-repeat;
+  background-size: 200% 100%;
+  animation: gradient-fill 2s ease forwards;
+  opacity: 0.85;
+}
+
+@keyframes gradient-fill {
+  to {
+    background-position: right center;
+  }
+}
+
+
+
+.improvements {
+  display: flex;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background: linear-gradient(to left, #ebebeb, #ffffff);
+}
+
+.left-col {
+  flex-basis: 50%;
+  padding-left: 200px;
+}
+
+.right-col {
+  flex-basis: 50%;
+  text-align: right;
+  padding-right: 75px;
+}
+
+.right-col {
+  flex-basis: 50%;
+  text-align: center;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  justify-content: flex-start; /* Align items to start of flex container */
+  align-items: flex-end; /* Align items to end of flex container */
+  
+}
+
+.button-wrapper {
+  margin-top: 10px; /* Add some space between the "p" text and the button */
+  padding-right: 275px;
+}
+
+.improvements h1 {
+  margin: 0;
+  font-size: 75px;
+}
+
+.improvements p {
+  font-size: 25px;
+  padding-bottom: 50px;
+}
+
+.improvements a{
+  text-align: center;
+}
+.user-input {
+  width: 80%;
+  height: 150px; /* Adjust the height as needed */
+  padding: 15px;
+  border: 2px solid #00539B;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #00539B;
+  resize: vertical;
+  outline: none;
+  opacity: 0.8;
+  resize: vertical;
+  overflow: auto; /* Enable vertical scrolling when needed */
+}
+.rectangle-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle {
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Add top margin */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 2px solid #00539B;
+}
+
+.rectangle h2,
+.rectangle h3,
+.rectangle p {
+  color: #00539B;
+}
+
+
+
+
+
+
+
