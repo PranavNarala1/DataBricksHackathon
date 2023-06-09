@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Academatch</title>
+  <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+
+      <a href="test.html"><img src="{{url_for('static', filename='IMG/academatch-low-resolution-logo-color-on-transparent-background.png')}}"></a>
+      <div class="nav-links">
+        <ul>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="text-box">
+      <div class="gradient-text">
+        <h1>Academatch</h1>
+      </div>
+
+      <p>Bridging the divide between aspiring researchers and passionate mentors.
+        <br>
+
+      </p>
+      
+
+      <form action="/" method = "POST">
+        
+      <div class="search-box">
+
+
+        <textarea class="user-input" placeholder="Describe your research interests" name="Name"></textarea>
+
+
+        <!-- <input type = "textarea" class="user-input" placeholder="Please provide a brief description of your research interests" name="Name"/>
+         -->
+        <!-- <textarea class="user-input" placeholder="Enter your text"></textarea> -->
+      </div>
+  
+      <br>
+  
+      <input id="hero-btn" class="hero-btn" type = "submit" placeholder="Enter your text" value="Discover your Professors!"/>
+        
+      <!-- <a id="hero-btn" class="hero-btn">Discover Professors!</a> -->
+
+</form>
+
+      
+    </div>
+  </section>
+
+
+</body>
+
+</html>

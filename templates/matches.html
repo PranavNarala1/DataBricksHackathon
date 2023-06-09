@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Professor Rectangles</title>
+  <link href="{{ url_for('static', filename='css/matches.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="rectangle-container">
+    <div class="rectangle">
+      <h2>Professor Match 1: {{' '.join(search_matches[0].split()[0:2])}}</h2>
+      <h3>Project Title: {{' '.join(search_matches[0].split()[2:])}}</h3>
+      <p>ArXiv Link: {{arxiv_links[0]}}</p>
+    </div>
+    <div class="rectangle">
+      <h2>Professor Match 2: {{' '.join(search_matches[1].split()[0:2])}}</h2>
+      <h3>Project Title: {{' '.join(search_matches[1].split()[2:])}}</h3>
+      <p>ArXiv Link: {{arxiv_links[1]}}</p>
+    </div>
+    <div class="rectangle">
+      <h2>Professor Match 3: {{' '.join(search_matches[2].split()[0:2])}}</h2>
+      <h3>Project Title: {{' '.join(search_matches[2].split()[2:])}}</h3>
+      <p>ArXiv Link: {{arxiv_links[2]}}</p>
+    </div>
+    <div class="rectangle">
+      <h2>Professor Match 4: {{' '.join(search_matches[3].split()[0:2])}}</h2>
+      <h3>Project Title: {{' '.join(search_matches[3].split()[2:])}}</h3>
+      <p>ArXiv Link: {{arxiv_links[3]}}</p>
+    </div>
+    <div class="rectangle">
+      <h2>Professor Match 5: {{' '.join(search_matches[4].split()[0:2])}}</h2>
+      <h3>Project Title: {{' '.join(search_matches[4].split()[2:])}}</h3>
+      <p>ArXiv Link: {{arxiv_links[4]}}</p>
+    </div>
+
+    
+    <!-- Repeat the above structure for the remaining rectangles -->
+  </div>
+</body>
+</html>
